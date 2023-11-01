@@ -11,7 +11,7 @@ This project is a web application designed to visualize the workings of various 
   
 ## Example
 ![Image 2023-11-01 at 4 47 PM](https://github.com/tyleroneil72/sorting-algorithm-visualizer/assets/43754564/ea2ae24f-f860-4f76-a580-5921b0295887)
-
+For a Live Demo [Click Here](https://htmlpreview.github.io/?https://github.com/tyleroneil72/sorting-algorithm-visualizer/blob/main/sorting_algorithms/index.html)
 ## Installation
 
 1. Clone the repository:
