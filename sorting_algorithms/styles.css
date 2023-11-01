@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+}
+
+h4 {
+    position: absolute;
+    bottom: 0px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#display {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 20px;
+    height: 300px; 
+    overflow: auto;
+}
+
+.element {
+    width: 20px;
+    margin: 0 2px;
+    background-color: #3498db;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.3s;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.options-group {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 0 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #3498db;
+    width: 20px;
+}
+
+/* Remove arrows on number input */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+button:hover {
+    background-color: #27ae60;
+    transition: background-color 0.3s;
+}
+
+.blue:hover {
+    background-color: #0177c5;
+}
+
+button:active {
+    background-color: #1f8b4c;
+}
+
+.blue:active {
+    background-color: #014ea0;
+}
+
+#metrics {
+    height: 250px;
+    transition: 0.3s;
+    opacity: 0;
+    text-align: center;
+}
+
+.moving {
+    position: relative;
+} 
+
+.moving::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 1;
+} 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tyler O'Neil">
+    <meta name="description" content="Real-time visualization of popular sorting algorithms such as Bubble Sort, Selection Sort, Insertion Sort, Heap Sort, and Quicksort. Compare performance metrics and learn about the intricacies of sorting algorithms.">
+    <meta name="keywords" content="Portfolio, Student, Sorting algorithm, visualizer, bubble sort, selection sort, insertion sort, heap sort, quicksort, performance metrics, algorithm visualization, web application, real-time sorting, interactive learning, computer science">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Sorting Algorithm Visualizer</h1>
+    <div id="container">
+        <div id="display">
+            <!-- Elements will be dynamically added here -->
+        </div>
+        <div class="options">
+            <div class="options-group">
+                <button onclick="bubbleSort()">Bubble Sort</button>
+                <button onclick="selectionSort()">Selection Sort</button>
+                <button onclick="insertionSort()">Insertion Sort</button>
+                <button onclick="heapSort()">Heap Sort</button>
+                <button onclick="quickSort()">Quick Sort</button>
+            </div>
+            <div class="options-group">
+                <input type="number" id="numElements" min="1" max="30" value="25">
+                <button class="blue" onclick="updateElements()">Set Elements</button>
+                <button class="blue" onclick="randomizeHeights()">Randomize</button>
+            </div>
+        </div>
+        <div id="metrics">
+            <!-- Performance metrics will be displayed here -->
+        </div>
+    </div>
+    <h4>Created By: Tyler O'Neil - Github: <a target="_blank" href="https://github.com/tyleroneil72">Here</a> - LinkedIn: <a target="_blank" href="https://www.linkedin.com/in/tyler-oneil-dev/">Here</a></h4>
+    <script src="script.js"></script>
+</body>
+</html>
