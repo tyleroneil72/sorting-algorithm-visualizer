@@ -170,6 +170,7 @@ async function heapSort() {
     const endTime = performance.now();
     calculateMetrics('Heap Sort', startTime, endTime);
 }
+
 // Helper function for heap sort
 async function heapify(arr, n, i) {
     let largest = i;
