@@ -18,6 +18,7 @@ This project is a web application designed to visualize the workings of various 
 
 ```bash
 git clone https://github.com/tyleroneil72/sorting-algorithm-visualizer.git
+cd sorting_algorithms
 ```
 And open the index.html file in your web browser
 
