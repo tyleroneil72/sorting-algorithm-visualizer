@@ -114,6 +114,8 @@ button:active {
 }
 
 #metrics {
+    position: relative;
+    top: -20px;
     height: 250px;
     transition: 0.3s;
     opacity: 0;
