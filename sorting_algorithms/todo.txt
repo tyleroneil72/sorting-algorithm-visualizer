@@ -1,9 +1,1 @@
 - Responsive Design on all platforms
-- Comment on all the code
-- Review all algorithms to make sure they work correctly
-- Push to github
-- Create readme file
-- Put on Linkedin projects
-
-LATER:
-- Recreate in react
