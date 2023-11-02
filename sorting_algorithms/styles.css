@@ -98,6 +98,10 @@ button {
     cursor: pointer;
 }
 
+button.disabled {
+    background-color: #7dc69b;
+}
+
 .blue {
     background-color: #3498db;
 }
