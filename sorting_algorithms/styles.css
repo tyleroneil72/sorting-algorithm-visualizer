@@ -102,20 +102,24 @@ button {
     background-color: #3498db;
 }
 
-button:hover {
+.blue.disabled {
+    background-color: #96afeb;
+}
+
+button:not([disabled]):hover {
     background-color: #27ae60;
     transition: background-color 0.3s;
 }
 
-.blue:hover {
+.blue:not([disabled]):hover {
     background-color: #0177c5;
 }
 
-button:active {
+button:not([disabled]):active {
     background-color: #1f8b4c;
 }
 
-.blue:active {
+.blue:not([disabled]):active {
     background-color: #014ea0;
 }
 
