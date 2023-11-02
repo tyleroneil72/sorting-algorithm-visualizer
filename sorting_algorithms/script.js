@@ -259,6 +259,7 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// Function gets rid of the metrics from the screen
 function clearMetrics() {
     const metricsElement = document.getElementById('metrics');
     metricsElement.style.opacity = 0;
