@@ -270,8 +270,10 @@ function toggleButtons() {
     for (const button of buttons) {
         if (button.disabled) {
             button.removeAttribute('disabled');
+            button.classList.remove('disabled');
         } else {
             button.setAttribute('disabled', true);
+            button.classList.add('disabled');
         }
     }
 }
