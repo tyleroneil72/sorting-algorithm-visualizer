@@ -1,1 +1,1 @@
-- Responsive Design on all platforms (Does not work on tablets or mobile)
+
