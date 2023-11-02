@@ -85,6 +85,7 @@ function calculateMetrics(algorithmName, startTime, endTime) {
 
 // Bubble sort algorithm
 async function bubbleSort() {
+    toggleButtons();
     clearMetrics();
     const startTime = performance.now();
     let elements = Array.from(document.getElementsByClassName("element"));
@@ -105,10 +106,12 @@ async function bubbleSort() {
 
     const endTime = performance.now();
     calculateMetrics('Bubble Sort', startTime, endTime);
+    toggleButtons();
 }
 
 // Selection sort algorithm
 async function selectionSort() {
+    toggleButtons();
     clearMetrics();
     const startTime = performance.now();
     let elements = Array.from(document.getElementsByClassName("element"));
@@ -127,10 +130,12 @@ async function selectionSort() {
     }
     const endTime = performance.now();
     calculateMetrics('Selection Sort', startTime, endTime);
+    toggleButtons();
 }
 
 // Insertion sort algorithm
 async function insertionSort() {
+    toggleButtons();
     clearMetrics();
     const startTime = performance.now();
     let elements = Array.from(document.getElementsByClassName("element"));
@@ -147,10 +152,12 @@ async function insertionSort() {
 
     const endTime = performance.now();
     calculateMetrics('Insertion Sort', startTime, endTime);
+    toggleButtons();
 }
 
 // Heap sort algorithm
 async function heapSort() {
+    toggleButtons();
     clearMetrics();
     const startTime = performance.now();
     let elements = Array.from(document.getElementsByClassName("element"));
@@ -169,6 +176,7 @@ async function heapSort() {
 
     const endTime = performance.now();
     calculateMetrics('Heap Sort', startTime, endTime);
+    toggleButtons();
 }
 
 // Helper function for heap sort
@@ -193,12 +201,14 @@ async function heapify(arr, n, i) {
 
 // Quicksort algorithm
 async function quickSort() {
+    toggleButtons();
     clearMetrics();
     const startTime = performance.now();
     let elements = Array.from(document.getElementsByClassName("element"));
     await quickSortRecursive(elements, 0, elements.length - 1);
     const endTime = performance.now();
     calculateMetrics('Quick Sort', startTime, endTime);
+    toggleButtons();
 }
 
 // Helper function for quick sort
@@ -252,4 +262,16 @@ function sleep(ms) {
 function clearMetrics() {
     const metricsElement = document.getElementById('metrics');
     metricsElement.style.opacity = 0;
+}
+
+// Disables buttons when an algorithm is running, enables them after
+function toggleButtons() {
+    const buttons = document.querySelectorAll("button");
+    for (const button of buttons) {
+        if (button.disabled) {
+            button.removeAttribute('disabled');
+        } else {
+            button.setAttribute('disabled', true);
+        }
+    }
 }
