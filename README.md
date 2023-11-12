@@ -34,4 +34,4 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact
-For any inquiries or questions, you can reach me at tyleroneil72@gmail.com or on my linkedin at https://ca.linkedin.com/in/tyler-oneil-dev
+For any inquiries or questions, you can reach me at tyleroneildev@gmail.com or on my linkedin at https://ca.linkedin.com/in/tyler-oneil-dev
