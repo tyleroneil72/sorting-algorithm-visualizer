@@ -23,6 +23,7 @@ For a Live Demo [Click Here](https://htmlpreview.github.io/?https://github.com/t
 
 ```bash
 git clone https://github.com/tyleroneil72/sorting-algorithm-visualizer.git
+cd sorting-algorithm-visualizer
 cd sorting_algorithms
 ```
 And open the index.html file in your web browser
